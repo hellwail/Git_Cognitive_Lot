@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<Buttons>
+	<Location name="PlanningMenu">
+
+		<Button name="Создать новый документ" displayName="Создать новый документ">
+			<Action type="Register">
+				<FlowName value="Заявки участников 223ФЗ" />
+			</Action>
+			<Visibility>
+				<Rules>
+					<And>
+						<WhenHttpGetParamEquals param="searchBlock" value="Учебный раздел" />
+					</And>
+				</Rules>
+			</Visibility>
+		</Button>	
+		
+	</Location>
+	
+</Buttons>								
