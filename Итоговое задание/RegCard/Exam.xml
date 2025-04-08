@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <view>
+        <rows>
+            <row>
+                <column>
+                    <block id="genInfo" name="Общие сведения">
+                        <rows>
+                            <row>
+                                <column>
+                                    <block id="11" name="Регистрационные данные">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Регистрационный_номер" name="Регистрационный номер" valueType="text" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Дата_создания" name="Дата создания" valueType="date" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Редакция" name="Редакция" valueType="integer" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Статус" name="Статус" valueType="text" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="12" name="Ответственный по документу">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|ФИО_ответственного" name="ФИО ответственного" valueType="text" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Группа" name="Группа" valueType="text" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+
+                                <column>
+                                    <block id="13" name="Основные сведения">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Дополнительная_информация" name="Дополнительная информация" valueType="longtext" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Стоимость" name="Стоимость" valueType="integer" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Налог" name="Налог, %" valueType="integer" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Сумма_налога" name="Сумма налога" valueType="integer" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="14" name="Таблица">
+                                        <!-- <rows> -->
+                                            <!-- <row> -->
+                                                <!-- <column> -->
+                                                    <!-- <table key="|Document|Table" height="300"> -->
+                                                        <!-- <column fieldType="field" key="|Поле_1" name="Поле 1" valueType="text" weight="40"/> -->
+                                                        <!-- <column fieldType="field" key="|Поле_2" name="Поле 2" valueType="text" weight="40"/> -->
+                                                        <!-- <column fieldType="field" key="|Поле_3" name="Поле 3" valueType="integer" weight="20"/> -->
+                                                    <!-- </table> -->
+                                                <!-- </column> -->
+                                            <!-- </row> -->
+                                        <!-- </rows> -->
+                                    </block>
+                                </column>
+                            </row>
+                        </rows>
+                    </block>
+                    <block id="agreeInfo" name="Информация по согласованию">
+                        <rows>
+                            <row>
+                                <column>
+                                    <block id="21" name="Блок 21">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Логическое_поле_2" name="Логическое поле 2" valueType="boolean" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Логическое_поле_3" name="Логическое поле 3" valueType="boolean" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Согласующий" name="Согласующий" valueType="addressbook" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Текстовое_поле_5" name="Текстовое поле 5" valueType="text" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Дата_3" name="Дата 3" valueType="date" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="22" name="Блок 22">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Категория" name="Категория" valueType="text" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Комментарий" name="Комментарий" valueType="longtext" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                        </rows>
+                    </block>
+                </column>
+            </row>
+        </rows>
+    </view>
+    <edit>
+        <rows>
+            <row>
+                <column>
+                    <block id="genInfo" name="Общие сведения">
+                        <rows>
+                            <row>
+                                <column>
+                                    <block id="12" name="Ответственный по документу">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field name="Группа" isLabel="true" title="Выберите группу" edit-name="GroupName"/>
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Группа" name="Группа" valueType="text" isValue="true" edit-name="GroupName" dictionary-selection-start-level="1" edit-tool = "Словарь 1" edit-readonly="true" dict-column-name="code" dict-edit-name="GroupName" show-dict-column="true" display-field-part="true" edit-required="true"/>
+                                                </column>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Наличие_таблицы" name="С таблицей" valueType="boolean" edit-name="LogField1" title="Отобразить/скрыть таблицу" />
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="13" name="Основные сведения">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field name="Дополнительная информация" edit-name="additInfo" isLabel="true" title="При необходимости введите дополнительную информацию" />
+                                                    <field fieldType="field" key="|Document|Дополнительная_информация" valueType="longtext" edit-name="additInfo" isValue="true"/>
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field name="Стоимость" edit-name="Price" isLabel="true" title="Введите стоимость"/>
+                                                    <field fieldType="field" key="|Document|Стоимость" valueType="integer" edit-name="Price" edit-required="true" isValue="true"/>
+                                                </column>
+                                                <column>
+                                                    <field name="Налог, %" edit-name="Tax" isLabel="true" title="Введите налог в процентах"/>
+                                                    <field fieldType="field" key="|Document|Налог" valueType="integer" edit-name="Tax" edit-required="true" isValue="true"/>
+                                                </column>
+                                                <column>
+                                                    <field name="Сумма налога" edit-name="TaxSum" isLabel="true" />
+                                                    <field fieldType="field" key="|Document|Сумма_налога" valueType="integer" edit-readonly="true" edit-name="TaxSum" isValue="true" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field name="Категория" edit-name="Category" isLabel="true" title="Категория рассчитывается автоматически в зависимости от введённого в поле 'Стоимость' значения" />
+                                                    <field fieldType="field" key="|Document|Категория" valueType="text" edit-name="Category" isValue="true" edit-readonly="true"/>
+                                                </column>
+                                                <column>
+
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="14" name="Таблица">
+                                        <!-- <rows> -->
+                                            <!-- <row> -->
+                                                <!-- <column> -->
+                                                    <!-- <table key="|Document|Table" edit-name="Table" height="300"> -->
+                                                        <!-- <column fieldType="field" key="|Поле_1" name="Поле 1" edit-name="TableField1" isValue="true" valueType="text" weight="40"/> -->
+                                                        <!-- <column fieldType="field" key="|Поле_2" name="Поле 2" edit-name="TableField2" isValue="true" valueType="text" weight="40"/> -->
+                                                        <!-- <column fieldType="field" key="|Поле_3" name="Поле 3" edit-name="TableField3" isValue="true" valueType="integer" weight="20"/> -->
+                                                    <!-- </table> -->
+                                                <!-- </column> -->
+                                            <!-- </row> -->
+                                        <!-- </rows> -->
+                                    </block>
+                                </column>
+                            </row>
+                        </rows>
+                    </block>
+                    <block id="agreeInfo" name="Информация по согласованию">
+                        <rows>
+                            <row>
+                                <column>
+                                    <block id="21" name="Блок 21">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Логическое_поле_2" name="Логическое поле 2" valueType="boolean" edit-name="LogField2" />
+                                                </column>
+                                                <column>
+                                                    <field fieldType="field" key="|Document|Логическое_поле_3" name="Логическое поле 3" valueType="boolean" edit-name="LogField3" />
+                                                </column>
+                                            </row>
+                                            <row>
+                                                <column>
+                                                    <field name="Согласующий" edit-name="Approver" isLabel="true"/>
+                                                    <field fieldType="field" key="|Document|Согласующий|Согласующий" valueType="addressbook" isValue="true" edit-name="Approver" address-book-tool-selectable = "" address-book-tool="Approver" edit-addressbook-groups = "person" edit-readonly="true" edit-required="true" />
+
+                                                </column>
+                                                <column>
+                                                    <field name="Текстовое поле 5" edit-name="TextField5" isLabel="true" />
+                                                    <field fieldType="field" key="|Document|Текстовое_поле_5" valueType="text" edit-name="TextField5" isValue="true"/>
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                            <row>
+                                <column>
+                                    <block id="22" name="Блок 22">
+                                        <rows>
+                                            <row>
+                                                <column>
+                                                    <field name="Комментарий" edit-name="Comment" isLabel="true" />
+                                                    <field fieldType="field" key="|Document|Комментарий" valueType="longtext" edit-name="Comment" isValue="true"/>
+                                                </column>
+                                            </row>
+                                        </rows>
+                                    </block>
+                                </column>
+                            </row>
+                        </rows>
+                    </block>
+                </column>
+            </row>
+            <row>
+                <column>
+                    <block id="hidden" name="Скрытые поля">
+                        <rows>
+                            <row>
+                                <column>
+                                    <field fieldType="field" key="|Document|Инициатор|Инициатор" name="Инициатор" valueType="addressbook" isValue="true" address-book-tool="Iniciator" edit-addressbook-groups = "" address-book-tool-selectable = "Person, Person, {currentOrganization}" edit-name="Iniciator" edit-readonly="true" edit-default-value="{currentUser}" />
+                                    <field fieldType="field" key="|Document|Регистрационный_номер" name="Регистрационный номер" valueType="text" edit-name="RegNum" isValue="true" edit-hidden="true" />
+                                    <field fieldType="field" key="|Document|Статус" name="Статус" valueType="text" edit-name="Status" isValue="true" edit-hidden="true"/>
+                                    <field fieldType="field" key="|Document|Дата_создания" name="Дата создания" valueType="date" edit-name="CreationDate" isValue="true" edit-default-value="{today}" edit-hidden="true" />
+                                    <field fieldType="field" key="|Document|Редакция" name="Редакция" valueType="integer" edit-name="Redaction" isValue="true" edit-hidden="true"/>
+                                    <field fieldType="field" key="|Document|ФИО_ответственного" name="ФИО ответственного" valueType="text" edit-name="Fullname" isValue="true" edit-addressbook-groups = "" address-book-tool-selectable = "Person, Person, {currentOrganization}" edit-default-value="{currentUser}" edit-hidden="true"/>
+                                    <field fieldType="field" key="|Document|Дата_3" name="Дата 3" valueType="date" edit-name="Date3" isValue="true" edit-hidden="true"/>
+                                </column>
+                            </row>
+                        </rows>
+                    </block>
+                </column>
+            </row>
+        </rows>
+    </edit>
+    <scripts>
+        <script file="~/Scripts/Content/Document/RegCard/Exam.js" />
+    </scripts>
+</root>
