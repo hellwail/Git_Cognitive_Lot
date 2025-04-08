@@ -1,0 +1,16 @@
+<Button name="Создать документ" displayName="Exam">
+	<Action type="Register">
+		<FlowName value="Поток 1" />
+	</Action>
+	<Visibility>
+		<Rules>
+			<And>
+				<WhenHttpGetParamEquals param="searchBlock" value="Учебный раздел" />
+				<or>
+					<WhenUserInWorkGroup name="Менеджер закупки"/>
+					<WhenUserInWorkGroup name="Специалист технической поддержки"/>
+				</or>
+			</And>
+		</Rules>
+	</Visibility>
+</Button>
