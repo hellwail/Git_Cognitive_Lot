@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Hooks>
+    <LinksModify>
+        <LinkCurrentDoc/>
+    </LinksModify>
+    <FieldsModify>
+        <SetField dst="|Document|Статус" value="Новый" />
+        <SetField dst="|Document|Редакция" value="1"/>
+    </FieldsModify>
+    <FieldsModify source="Заявка на размещение закупки 223ФЗ">
+        <SetField dst="|Document|Имя_потока" value="Поток 1" />
+        <SetField dst="|Document|Редакция" value="({|Document|Идентификатор})"/>
+        <CopyField src="|Document|ФИО_ответственного" />
+        <CopyField src="|Document|Статус" />
+    </FieldsModify>
+    <OnDocumentCreated transaction="single">
+        <Aggregation>
+            <Select>
+            </Select>
+            <Actions>
+                <SetField targetFlow="{current}" targetField="|Document|Имя_потока" value="Поток 1"/>
+            </Actions>
+        </Aggregation>
+        <ConditionalActions>
+            <Conditions>
+            </Conditions>
+            <Actions>
+            </Actions>
+        </ConditionalActions>
+        <NamedConstants>
+            <Constant>
+                <Setting key="IncrementedElementPath" value="|Document|Регистрационный_номер"/>
+                <Setting key="CounterNameFormat" value="({|Document|Имя_потока})"/>
+            </Constant>
+        </NamedConstants>
+    </OnDocumentCreated>
+    <OnRegcardEdited transaction="single">
+        <Aggregation>
+        </Aggregation>
+        <ConditionalActions>
+        </ConditionalActions>
+    </OnRegcardEdited>
+</Hooks>
